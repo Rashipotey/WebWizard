@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  :root {
+    --main_theme: #FFFFFF;
+  }
+  
+  button {
+    background: none;
+    border: none;
+  }
+  
+  body {
+    width: 100vw;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .blur_gradient {
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  .bg_container {
+    position: absolute;
+    width: 1465px;
+    height: 2000px;
+    background: #B998CE;
+  }
+  .inner_bg{
+    position: absolute;
+    width: 1285px;
+    height: 797px;
+    left: calc(50% - 1285px/2 + 0.5px);
+    top: 30px;
+    background: #271433;
+    box-shadow: 14px 14px 8px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+  }
+  
+  .navbar{
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .navbar .nav_links a {
+    padding: 5px 25px;
+    color: var(--main_theme);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .navbar .nav_links a:hover{
+    color: #E7A4ED;
+  }
+  .animation{
+    width: 0px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#E7A4ED;
+    transition: all 0.4s;
+  }
+  li:nth-child(1):hover ~ .animation{
+    width:150px;
+  }
+  li:nth-child(2):hover ~ .animation{
+    width:150px;
+    left: 150px;
+  }
+  li:nth-child(3):hover ~ .animation{
+    width:150px;
+    left: 300px;
+  }
+  li:nth-child(4):hover ~ .animation{
+    width:150px;
+    left:450px
+  }
+  .nav_links ol{
+    display: flex;
+    list-style: none;
+  }
+  .pfp{
+    float: right;
+    position: absolute;
+    top:30px;
+    left:1000px;
+  }
+.img{
+    background: radial-gradient(47.62% 47.62% at 50% 45.44%, rgba(235, 173, 242, 0.5) 0%, rgba(39, 20, 51, 0.5) 100%);
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    left: 680px;
+    float: left;
+    position: absolute;
+    top:70px;
+}
+.line{
+  position: absolute;
+  left:1140px;
+  top:30px;
+  height: 30px;
+  width:30px;
+}
+
+.line:hover .dropdown-content {display: block;}
+
+.signup_button{
+  border-radius: 13px;
+  font-family:'EB Garamond';
+  color: #3B1C63;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  text-align:center;
+  height:40px;
+  width:130px;
+  background: #E7A4ED;
+  padding: 10px 20px 10px 20px;
+  position: absolute;
+  top:518px;
+  left:240px;
+  transition: transform .2s;
+}
+.signup_button:hover{
+  transform:scale(1.1);
+}
+.login_button{
+  border-radius: 13px;
+  font-family:'EB Garamond';
+  color: #3B1C63;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  text-align:center;
+  height:40px;
+  width:100px;
+  background: #E7A4ED;
+  padding: 10px 20px 10px 20px;
+  position: absolute;
+  top:518px;
+  left:90px;
+  transition: transform .2s;
+}
+.log{
+  position: absolute;
+  top:100px;
+  left:430px;
+  justify-content: center;
+  background-color: #B998CE;
+  height: 500px;
+  width: 490px;
+  border-radius: 15px;
+  opacity:0.5;
+}
+.log1{
+  position: absolute;
+  top:100px;
+  left:150px;
+  justify-content: center;
+  opacity:1;
+}
+.login_button:hover{
+  transform:scale(1.1);
+}
+.landing {
+    width: 100%;
+    position: absolute;
+    top: 0px; 
+  }
+  .landing .landing_title_main {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 91px;
+    position: absolute;
+    top:200px;
+    left:90px;
+    color:#FFFFFF;
+    font-family:"Modern Antiqua";
+  }
+  .landing .landing_title_sub{
+    position: absolute;
+    width: 589px;
+    height: 192px;
+    left: 90px;
+    top: 320px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .second_bg{
+    height: 770px;
+    width:1467px;
+    background-color: #271433;
+    position: absolute;
+    top: 920px;
+  }
+  .img2{
+    height: 650px;
+    width: 570px;
+    position: absolute;
+    left:50px;
+    top: 68px;
+  }
+  .innerText{
+    height: 400px;
+    width: 570px;
+    position: absolute;
+    left: 774px;
+    top: 68px;
+    font-family: 'Modern Antiqua';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 38px;
+  line-height: 36px;
+  color: #B997CE;
+}
+#grp{
+  position: absolute;
+  top: 1690px;
+}
+#grp p{
+  color: #271433;
+  font-family: 'Montserrat';
+  font-size: 25px;
+}
+.accordion {
+  background-color:#271433;
+  color:#FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 18px;
+  width: 1465px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color:#B998CE;
+  color: #271433;
+}
+.pfpimg{
+  height: 150px;
+  width: 150px;
+  float: right;
+  position: absolute;
+  right: 200px;
+  border-radius: 15px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: lavender;
+  display: none;
+  overflow: hidden;
+}
+.panel p{
+  font-family: 'Monterrat';
+  font-size: 20px;
+  color:white;
+  height: 150px;
+}
+.Foot{ 
+  background-color: black;
+  color: white;
+  font-family: Modern Antiqua;
+  width: 1467px;
+  height: 323px;
+  justify-content: center;
+  position:absolute;
+  top: 1900px;
+  padding-top: 90px; 
+  line-height: 80px;
+}
+.head1{
+  width: 710px;
+  height: 36px;
+  font-family: 'Modern Antiqua';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  text-decoration: none;
+  color: var(--main_theme);
+  line-height: 20px;
+}
+.call, .mail{
+  text-decoration: none;
+  color: var(--main_theme);
+  font-family: 'Modern Antiqua';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.mailImg{
+  height: 33px;
+  width: 35px;
+  position: absolute;
+  top: 152px;
+  left:500px;
+}
+.mail{
+  position: absolute;
+  left:550px
+}
+.callImg{
+  height: 33px;
+  width: 35px;
+  position: absolute;
+  top:150px ;
+  left: 790px;
+}
+.call{
+  position: absolute;
+  left:840px;
+}
+
+ #mail, #pw{
+    border: none;
+    background-color: #B998CE;
+    border-bottom:#271433 2px solid ;
+    height: 50px;
+    width: 200px;
+  }
+
+  ::placeholder{
+    color: #271433;
+  }
