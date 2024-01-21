@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
   }
   
   :root {
@@ -15,6 +22,8 @@
   }
   
   body {
+    margin: 0;
+    padding: 0;
     width: 100vw;
     font-family: "Raleway", sans-serif;
   }
@@ -46,6 +55,28 @@
     width: 100%;
     padding: 30px 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    .nav_links {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav_links ol {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav_links a {
+      width: 100%;
+      display: block;
+    }
+  }
+
   .navbar .nav_links a {
     padding: 5px 25px;
     color: var(--main_theme);
@@ -131,6 +162,7 @@
 .signup_button:hover{
   transform:scale(1.1);
 }
+
 .login_button{
   border-radius: 13px;
   font-family:'EB Garamond';
@@ -140,35 +172,54 @@
   font-weight: 600;
   text-align:center;
   height:40px;
-  width:100px;
+  width:130px;
   background: #E7A4ED;
   padding: 10px 20px 10px 20px;
   position: absolute;
   top:518px;
-  left:90px;
+  left:100px;
   transition: transform .2s;
 }
-.log{
-  position: absolute;
-  top:100px;
-  left:430px;
+
+.login_btn:hover {
+  transform: scale(1.1);
+}
+
+.outer-div {
+  background-image: url('assets/bg.png');
+  height: 100vh;
+  width: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.log {
+  padding: 8% 0px 0px 16%;
+  margin: auto;
   background-color: #B998CE;
   height: 500px;
-  width: 490px;
+  width: 50%;
   border-radius: 15px;
-  opacity:0.5;
+  opacity: 0.5;
 }
-.log1{
-  position: absolute;
-  top:100px;
-  left:150px;
-  justify-content: center;
-  opacity:1;
+
+.log_btn {
+  width: 25%; 
+  height: 50px;
+  background-color:#3B1C63 ;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
 }
-.login_button:hover{
-  transform:scale(1.1);
-}
+
+
 .landing {
     width: 100%;
     position: absolute;
@@ -326,14 +377,6 @@
   position: absolute;
   left:840px;
 }
-
- #mail, #pw{
-    border: none;
-    background-color: #B998CE;
-    border-bottom:#271433 2px solid ;
-    height: 50px;
-    width: 200px;
-  }
 
   ::placeholder{
     color: #271433;
